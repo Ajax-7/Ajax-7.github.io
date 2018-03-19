@@ -1,136 +1,59 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-    font-family: 'Raleway', sans-serif;
-   
-    
-    
-}
-
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-.hero-image {
-  background-image: url("images/sunflight.jpg");
-  height: 80%;
-  opacity: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgb(0, 0, 0);
-}
-
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
-
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
-}
-.profimg-1{
-    position: relative;
-    display: flex;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-
-  object-fit: relative;
-    
+body {
+    background-image: url("pexels-photo-149613.jpeg");
+    background-color: #cccccc;
  }
-  .caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-  }
-  
-  .caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
-  }
-  
-  h3 {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font: 20px "Lato", sans-serif;
-    color: #111;
-  }
-  
-  
-  
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     
-}
- 
-  
-  
-  
-h1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(255, 255, 255);
-    font-size: 1.8rem;
+    
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
     }
-body{
-    font-size: 1.3em;
-   
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+
+  /*Blog*/
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
   
-    
-    
-    
-
-}
-div.trello-list {
-    border-style: double;
-    padding: 20px;
-    margin: 5px;
-    display: inline-block;
-}
-
-ol.cards{
-    padding: 0;
-    margin: 0;
-}
-ol.cards li{
-    list-style: none;
-    background-color: white;
-
-    border: solid 1px black;
-    border-radius: 2 px;
-    margin-bottom: 10px;
-    padding: 10px 5px;
-}
-ol.cards li:hover{
-    background-color: lightgrey;
-}
